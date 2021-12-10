@@ -6,12 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Cinzel:wght@500&display=swap" rel="stylesheet"> 
     <script src="./script.js"></script>
     <title>Tetris</title>
 </head>
 
-<body>
-
+<body onload="start()">
+    <main>
+        <section class="button-container">
+            <li id="titles">TETRIS <br/> GAME</li>
+            <input type="button" value="PAUSE" class="game-button" onclick="pauseGame()">
+            <input type="button" value="RE-START" class="game-button" onclick="restartGame()">
+        </section>
+        <canvas id="canva" width="200" height="400" style=" border: solid 2px black;"></canvas>
+        <section class="score-container">
+            <div class="score">
+                <h2 id="titles">
+                    Next
+                </h2>
+                <h2 id="titles">
+                    Score
+                </h2>
+                <p></p>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

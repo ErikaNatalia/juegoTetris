@@ -1,6 +1,62 @@
 
+/* font-family: 'Allerta Stencil', sans-serif; */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-height: 640px;
 }
+
+main{
+    width: 100%;
+    height: auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*all titles*/
+#titles{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+/*first container-buttons*/
+.button-container{
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*Buttons*/
+.game-button{
+    width: 30%;
+    height: 50px;
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+/*Second container-canvas*/
+#canva{
+    width: 25%;
+}
+
+/*Third container-score*/
+.score-container{
+    width: 33.3%;
+}
+.score{
+    width: 90%;
+    height: 90%;
+    background-color: white;
+}
+
