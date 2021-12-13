@@ -165,13 +165,13 @@ const Z = [
 
 //Array with pieces and their colors
 const PIECES = [
-    [Z,"red"],
-    [S,"green"],
-    [T,"yellow"],
-    [O,"blue"],
-    [L,"purple"],
-    [I,"cyan"],
-    [J,"orange"]
+    [Z,"#22363D"],
+    [S,"#045775"],
+    [T,"#D9BDA0"],
+    [O,"#BA674E"],
+    [L,"#8F1D13"],
+    [I,"#6B735A"],
+    [J,"#5D8AA6"]
 ];
 
 //Generate random pieces
@@ -372,7 +372,7 @@ let gameOver = false;
 function drop(){
     let now = Date.now();
     let delta = now - dropStart;
-    if(delta > 1000){
+    if(delta > 550){
         p.moveDown();
         dropStart = Date.now();
     }
@@ -381,7 +381,6 @@ function drop(){
     }
 }
 drop();
-//The pieces and their
 
 //This function start all
 /*function start(){

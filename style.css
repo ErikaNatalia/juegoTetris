@@ -48,6 +48,7 @@ main{
 /*Second container-canvas*/
 #canva{
     width: 25%;
+    float: left;
 }
 
 /*Third container-score*/
@@ -57,6 +58,5 @@ main{
 .score{
     width: 90%;
     height: 90%;
-    background-color: white;
 }
 
