@@ -18,7 +18,7 @@ main{
 }
 
 /*all titles*/
-#titles{
+.titles{
     margin-bottom: 10px;
     text-align: center;
     font-size: 3rem;

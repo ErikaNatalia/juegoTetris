@@ -9,30 +9,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Cinzel:wght@500&display=swap" rel="stylesheet"> 
-    <script src="./script.js"></script>
+    
     <title>Tetris</title>
 </head>
 
-<body onload="start()">
+<body>
     <main>
         <section class="button-container">
-            <li id="titles">TETRIS <br/> GAME</li>
+            <li class="titles">TETRIS <br/> GAME</li>
             <input type="button" value="PAUSE" class="game-button" onclick="pauseGame()">
-            <input type="button" value="RE-START" class="game-button" onclick="restartGame()">
+            <input type="button" value="RE-START" class="game-button" onclick="javascript:window.location.reload()">
         </section>
         <canvas id="canva" width="200" height="400" style=" border: solid 2px black;"></canvas>
         <section class="score-container">
             <div class="score">
-                <h2 id="titles">
+                <h2 class="titles">
                     Next
                 </h2>
-                <h2 id="titles">
+                <h2 class="titles">
                     Score
                 </h2>
-                <p></p>
+                <p class="titles" id="score">0</p>
             </div>
         </section>
     </main>
+    <script src="./script.js"></script>
 </body>
-
 </html>
